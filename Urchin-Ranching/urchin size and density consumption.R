@@ -15,7 +15,7 @@ diameter <- function(a) {
   return(D)
 }
 
-age<-c(0:7)
+age<-c()
 
 diameter(age)
 

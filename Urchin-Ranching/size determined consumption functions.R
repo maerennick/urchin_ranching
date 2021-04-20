@@ -1,14 +1,20 @@
 ### COnsumption by size 
 
-##df_p1 <- read.csv("data/Unused Data/size_experiment/raw/Purple_size_data.csv")
 
+library(dplyr)
+
+
+
+
+
+##df_p1 <- read.csv("data/Unused Data/size_experiment/raw/Purple_size_data.csv")
 df_p1 <- df_p1 %>% 
   mutate(urchin = "p")
 
 str(df_p1)
 head(df_p1)
 
-df_p2 <- read.csv("data/Unused Data/size_experiment/raw/Purple_consuption_data.csv")
+df_p2 <- read.csv("Data/Purple_consuption_data.csv")
 
 df_p3 <-df_p2 %>%
   filter(urchin_size_cat != 'control') %>% 
